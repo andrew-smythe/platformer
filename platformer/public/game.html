@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Andrew & Dave's CSCI 311 Final Project</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="socket.io/socket.io.js"></script>
+    <script src="js/proj.js"></script>
+    <script src="js/clientConnectionManager.js"></script>
+</head>
+
+<body onload="clientConnectionManager.init()">
+    <div id="container">
+        <h1>Andrew & Dave's Platformer Game</h1>
+        <hr />
+        <br />
+        <div id='left'>
+        <h3>Number of Wins</h3>
+        <p id='wins' style='text-align: center'>&nbsp;</p>
+        <hr />
+        <h3>How to Play</h3><br />
+        <ul>
+        <li>Move left/right -- Left & Right Arrows</li>
+        <li>Jump -- Up Arrow</li>
+        </ul><br />
+        <p>Find the red door in the labyrinth of platforms before your
+        friends can!</p>
+        </div>
+        <div id='board'>
+            <canvas id='gameCanvas' width='500' height='500'>
+            </canvas>
+        </div>
+        <hr />
+    </div>    
+</body>
+
+</html>

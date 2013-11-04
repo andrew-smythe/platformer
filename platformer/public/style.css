@@ -1,0 +1,153 @@
+@charset "utf-8";
+/* CSS Stylesheet for Andrew's CSCI311 Lab #2 */
+
+/* Styles for All */
+
+html, body, div, p, h1, h2, h3, span, ul, li, img
+{
+    margin:      0;
+    padding:     0;
+    font-family: sans-serif;
+}
+
+/* Styles for HTML, BODY */
+
+html, body
+{
+	height:      100%;
+	width:       100%;
+}
+
+body
+{
+    background-color: #BBBBFF
+}
+
+/* Styles for DIV-container */
+
+div#container
+{
+    border-radius: 5px;
+	margin: 0 auto;
+	padding: 10px;
+	width:  1000px;
+	background-color: #DDDDDD;
+	border: 1px solid #000000;
+	text-align: center;
+	overflow: auto;
+}
+
+#container h1
+{
+    text-align: center;
+    font-size: 24px;
+}
+
+#container h2
+{
+    text-align: center;
+    font-size: 20px;
+}
+
+#container h5
+{
+    text-align: left;
+}
+
+#container p
+{
+    text-align: left;
+    font-size: 13px;
+}
+
+#container canvas#gameCanvas
+{
+    border-radius: 5px;
+    border:5px solid #aaa;
+    margin: 0 auto;
+}
+
+/* Styles for DIV-login */
+
+#login
+{
+    border: 1px solid #000;
+    text-align: left;
+    margin: 5px 370px 5px 370px;
+    padding: 10px 10px 10px 10px;
+}
+
+/* Styles for DIV-left */
+
+div#left
+{
+    display:  inline;
+    float:    left;
+}
+
+#left ul li
+{
+    font-size: 13px;
+    font-family: Arial;
+    text-align: left;
+}
+
+#left p
+{
+    font-size: 13px;
+    font-family: Arial;
+}
+
+/* Styles for DIV-score */
+
+div#score
+{
+    border-radius: 5px;
+    background-color: #BBB;
+    padding:  20px 20px 20px 20px;
+    position: relative;
+    border:   1px dashed #000;
+}
+
+#score table
+{
+    padding: 5px 5px 5px 5px;
+    border: 1px dashed #000;
+}
+
+#score table th
+{
+    padding: 5px 40px 5px 40px;
+    border-bottom: 1px solid #000;
+}
+
+/* Styles for DIV-options */
+
+div#options
+{
+    border-radius: 5px;
+    background-color: #BBB;
+    padding:  20px 20px 20px 20px;
+    position: relative;
+    border:   1px dashed #000;
+}
+
+/* Styles for DIV-turn */
+
+div#turn
+{
+    border-radius: 5px;
+    background-color: #BBB;
+    margin:   0 0 20px 0;
+    padding:  20px 20px 20px 20px;
+    position: relative;
+    border:   1px dashed #000;    
+}
+
+/* Styles for DIV-board */
+
+div#board
+{
+    display:  inline;
+    position: relative;
+}
