@@ -124,12 +124,7 @@ var serverManager=
 		    
 		    // emit the winning player's name
 		    server.socketio.sockets.emit('player_victory', player.playerName);
-		});
-        /*
-		socket.on('req_game_restart', function ()
-		{
-			serverManager.socketio.sockets.emit('resp_restart_game');				
-		});	*/			
+		});		
 	},	
 	
 	//*************************************

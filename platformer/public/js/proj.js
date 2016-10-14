@@ -174,18 +174,6 @@ var GameManager =
     
         // setup socket interface
         this.serverHandler = clientConnectionManager;
-        
-        /* setup web worker for server handling
-        this.serverHandler = new Worker("js/worker.js");
-        
-        // setup callback function for web workers
-        this.serverHandler.onmessage = function (event) {
-            GameManager.players = event.data;
-        }
-        
-        this.serverHandler.onerror = function (error) {
-            alert("Worker Error: " + error.message + "\n");
-        }*/
             
         // create players array
         this.players = new Array();
@@ -478,16 +466,6 @@ var GameManager =
             // clear the canvas, and redraw
             canvas.width = canvas.width;
             
-            /* draw main player
-            
-            ctx.drawImage(this.playerSheet,2,19,23,23,Math.floor(this.mainPlayer.x+this.scrollX),Math.floor(this.mainPlayer.y+this.scrollY),25,25);            
-               
-            // draw the player's name
-            ctx.font = "12px Arial";
-            ctx.fillStyle = "rgba(0, 0, 0, 1)";
-            ctx.fillText(this.mainPlayer.playerName, Math.floor(this.mainPlayer.x+this.scrollX), Math.floor(this.mainPlayer.y+this.scrollY)-22.5);
-            */
-            
             ctx.drawImage(this.bg, 0, 0, 500, 500);
 
             // draw loop -- draw each player
@@ -606,7 +584,6 @@ var GameManager =
     onClose: function(event)
     {
         GameManager.serverHandler.disconnect(GameManager.mainPlayer);
-        //GameManager.serverHandler.postMessage({text: "disconnect", player: this.mainPlayer});
     },
     
     /*******************************

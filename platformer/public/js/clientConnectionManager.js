@@ -28,12 +28,6 @@ var clientConnectionManager=
 	        // tell the game manager to restart, and that a player has won
 	        clientConnectionManager.manager.restart(playerName);
 	    });
-	    
-		/*
-		this.socket.on('resp_restart_game', function()   //
-										{ 
-												clientConnectionManager.gameState.startGame();
-										});*/
 	},
 	
 	updatePlayer: function(player)
