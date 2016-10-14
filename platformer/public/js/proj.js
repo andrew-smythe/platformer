@@ -1,3 +1,15 @@
+/**
+*
+* TODO:
+*  - Refactor GameManager and clientConnectionManager classes to use prototyping instead of hash definitions.
+*  - Receive map layout from server on init (so layout is not stored as plaintext locally)
+*  - Remove code that does nothing
+*  - Encapsulate game objects:
+*      - Map and player should have their own draw function, called from game manager
+*      - Player should be derived from some base game object class (to allow for future scaling, ie. enemies, objects/projectiles that will all have create, draw methods, etc.)
+*
+*/
+
 var map =
 "111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111\
 11                                                                                                11                                                11\
